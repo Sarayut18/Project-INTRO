@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือกสาขาวิชาและป้อนข้อมูลการสมัคร - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Google Font (Prompt) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="image/logo_kmutnb.png" alt="Logo KMUTNB" class="img-university-logo">
+                <div class="header-title">
+                    <h1>รับสมัครนักศึกษา</h1>
+                    <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html">หน้าแรก</a>
+            <a href="form_1.html">สมัครเรียน</a>
+            <a href="regulations.html">ระเบียบการรับสมัคร</a>
+            <a href="process.html">ขั้นตอนการรับสมัคร</a>
+            <a href="eligibility.html">ตรวจสอบคุณวุฒิก่อนสมัคร</a>
+            <a href="tuition.html">ค่าใช้จ่ายในการศึกษา</a>
+            <a href="contact.html">ติดต่อเรา</a>
+            <!-- ส่วนโปรไฟล์และเมนูตั้งค่า -->
+            <!-- ส่วนโปรไฟล์และกล่องข้อความออกจากระบบแบบดันลงมาข้างล่าง -->
+            <details class="user-profile-dropdown">
+                <summary class="user-profile-menu">
+                <i class="fa-regular fa-circle-user profile-icon"></i>
+                <span>Sarayut</span>
+                <i class="fa-solid fa-gear settings-icon"></i>
+                </summary>
+            
+                <!-- กล่องข้อความออกจากระบบที่จะขยายพื้นที่ลงมาด้านล่างโดยไม่ทับซ้อน -->
+                <div class="dropdown-box">
+                    <a href="Login.html" class="logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i> Log out
+                    </a>
+                </div>
+            </details>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+
+        <!-- Step Indicator Bar -->
+        <div class="step-wrapper">
+            <div class="step-item completed">
+                <div class="step-circle">1</div>
+                <span class="step-label">ยอมรับเงื่อนไขการสมัคร</span>
+            </div>
+            <div class="step-line completed"></div>
+            <div class="step-item active">
+                <div class="step-circle">2</div>
+                <span class="step-label">เลือกสาขาวิชาและป้อนข้อมูลการสมัคร</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item">
+                <div class="step-circle">3</div>
+                <span class="step-label">ยืนยันข้อมูลและพิมพ์ใบชำระเงิน</span>
+            </div>
+        </div>
+
+        <!-- Main Form Card Container -->
+        <div class="form-card">
+            <div class="form-header">
+                <h3>2.เลือกสาขาวิชาและป้อนข้อมูลการสมัคร</h3>
+            </div>
+
+            <form class="application-form">
+
+                <!-- 2.1 ข้อมูลวุฒิการศึกษาที่ใช้สมัคร -->
+                <section class="form-section">
+                    <h4 class="section-title">2.1 ข้อมูลวุฒิการศึกษาที่ใช้สมัคร</h4>
+                    
+                    <div class="form-row-single">
+                        <label>วุฒิการศึกษาที่ใช้สมัคร<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="high_school">มัธยมศึกษาตอนปลาย</option>
+                            <option value="associate">ปวช.</option>
+                            <option value="bachelor">ปวส.</option>
+                            <option value="master">ปริญญาตรี</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ประเภทวิชา<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="science">วิทยาศาสตร์</option>
+                            <option value="liberal_arts">มนุษยศาสตร์</option>
+                            <option value="liberal_arts2">อุตสาหกรรม</option>
+                            <option value="liberal_arts3">เทคโนโลยีสารสนเทศ</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>กลุ่มวิชา<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="it_innovation">เทคโนโลยีสารสนเทศและนวัตกรรม</option>
+                            <option value="it_innovation1">เทคโนโลยีสารสนเทศและการสื่อสาร</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>สาขาวิชา<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="it">เทคโนโลยีสารสนเทศ</option>
+                            <option value="it1">เทคโนโลยีสื่อสาร</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>สาขางาน<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="it">เทคโนโลยีสารสนเทศ</option>
+                            <option value="it1">เทคโนโลยีสื่อสาร</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- 2.2 ข้อมูลสถานศึกษาและสถานะการศึกษาปัจจุบัน -->
+                <section class="form-section">
+                    <h4 class="section-title">2.2 ข้อมูลสถานศึกษาและสถานะการศึกษาปัจจุบัน</h4>
+
+                    <div class="form-row-single">
+                        <label>จังหวัดที่ตั้งสถานศึกษา<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="bangkok">กรุงเทพมหานคร</option>
+                            <option value="samut_prakan">สมุทรปราการ</option>
+                            <option value="nonthaburi">นนทบุรี</option>
+                            <option value="pathum_thani">ปทุมธานี</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ชื่อสถานศึกษา<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="pathum_thani">วิทยาลัยเทคโนโลยีปทุมธานี</option>
+                            <option value="bangkok">วิทยาลัยเทคโนโลยีกรุงเทพมหานคร</option>
+                            <option value="samut_prakan">วิทยาลัยเทคโนโลยีสมุทรปราการ</option>
+                            <option value="phangnga">วิทยาลัยเทคโนโลยีพงศ์สวัสดิ์</option>
+                            <option value="nonthaburi">โรงเรียนเตรียมอุดม</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>สถานะการศึกษา<span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="edu_status" checked> สำเร็จการศึกษา</label>
+                            <label><input type="radio" name="edu_status"> กำลังศึกษาอยู่</label>
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>คะแนนเฉลี่ยสะสมถึงภาคเรียนสุดท้าย<span class="required">*</span></label>
+                        <input type="text" placeholder="2.75" class="input-small">
+                    </div>
+                </section>
+
+                <!-- 2.3 ข้อมูลโครงการ คณะและสาขาวิชาที่สมัคร -->
+                <section class="form-section">
+                    <h4 class="section-title">2.3 ข้อมูลโครงการ คณะและสาขาวิชาที่สมัคร</h4>
+
+                    <div class="form-row-single">
+                        <label>คณะ<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="faculty_of_engineering">คณะวิศวกรรมศาสตร์</option>
+                            <option value="faculty_of_information_technology">คณะเทคโนโลยีสารสนเทศและอุสหกรรม</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>โครงการ<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="project_a">โครงการ A</option>
+                            <option value="project_b">โครงการ B</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- สาขาวิชาที่เลือกสมัคร (Table) -->
+                <section class="form-section">
+                    <h4 class="table-title">สาขาวิชาที่เลือกสมัคร</h4>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th width="15%">ลำดับที่</th>
+                                    <th width="85%">สาขาวิชา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td><select>
+                                        <option value="">---เลือกสาขาวิชาที่ต้องการ---</option>
+                                        <option value="computer_science">สาขาคอมพิวเตอร์วิทยา</option>
+                                        <option value="software_engineering">สาขาวิศวกรรมซอฟต์แวร์</option>
+                                        <option value="industrial_engineering">สาขาวิชาอุตสาหกรรม</option>
+                                        <option value="information_technology">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td><select>
+                                        <option value="">---เลือกสาขาวิชาที่ต้องการ---</option>
+                                        <option value="computer_science">สาขาคอมพิวเตอร์วิทยา</option>
+                                        <option value="software_engineering">สาขาวิศวกรรมซอฟต์แวร์</option>
+                                        <option value="industrial_engineering">สาขาวิชาอุตสาหกรรม</option>
+                                        <option value="information_technology">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td><select>
+                                        <option value="">---เลือกสาขาวิชาที่ต้องการ---</option>
+                                        <option value="computer_science">สาขาคอมพิวเตอร์วิทยา</option>
+                                        <option value="software_engineering">สาขาวิศวกรรมซอฟต์แวร์</option>
+                                        <option value="industrial_engineering">สาขาวิชาอุตสาหกรรม</option>
+                                        <option value="information_technology">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td><select>
+                                        <option value="">---เลือกสาขาวิชาที่ต้องการ---</option>
+                                        <option value="computer_science">สาขาคอมพิวเตอร์วิทยา</option>
+                                        <option value="software_engineering">สาขาวิศวกรรมซอฟต์แวร์</option>
+                                        <option value="industrial_engineering">สาขาวิชาอุตสาหกรรม</option>
+                                        <option value="information_technology">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+                                    </select></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- หลักฐาน/เอกสารที่ต้องแนบ (Table) -->
+                <section class="form-section">
+                    <h4 class="table-title">หลักฐาน/เอกสารที่ต้องแนบ</h4>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th width="75%">ชื่อหลักฐาน/เอกสารที่ใช้</th>
+                                    <th width="25%">ไฟล์หลักฐาน/เอกสาร</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    <tr>
+        <td>- รูปถ่ายชุดนักเรียนหรือนักศึกษา หน้าตรง ไม่สวมหมวก ไม่สวมแว่นตาดำ ขนาด 1-2 นิ้ว (ไฟล์ .jpg)</td>
+        <td class="text-center">
+            <input type="file" id="studentPhoto" accept=".jpg,.jpeg" hidden>
+            <button type="button" class="btn-tbl btn-upload"
+                    onclick="document.getElementById('studentPhoto').click()">
+                Upload
+            </button>
+            <button type="button" class="btn-tbl btn-clear"
+                    onclick="document.getElementById('studentPhoto').value=''">
+                Clear
+            </button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>- หลักฐานการศึกษา (หน้า-หลัง) เช่น ระเบียนแสดงผลการเรียน หรือ Transcript หรือใบรับรอง ที่แสดงว่าสำเร็จการศึกษาหรือกำลังศึกษาในภาคเรียนสุดท้าย (ไฟล์ .pdf)</td>
+        <td class="text-center">
+            <input type="file" id="educationDocument" accept=".pdf" hidden>
+            <button type="button" class="btn-tbl btn-upload"
+                    onclick="document.getElementById('educationDocument').click()">
+                Upload
+            </button>
+            <button type="button" class="btn-tbl btn-clear"
+                    onclick="document.getElementById('educationDocument').value=''">
+                Clear
+            </button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>- สำเนาบัตรประจำตัวประชาชน (หากมีการเปลี่ยนชื่อ หรือนามสกุล ให้สแกนเอกสารต่อท้ายสำเนาบัตรประจำตัวประชาชนด้วย) (ไฟล์ .pdf)</td>
+        <td class="text-center">
+            <input type="file" id="idCard" accept=".pdf" hidden>
+            <button type="button" class="btn-tbl btn-upload"
+                    onclick="document.getElementById('idCard').click()">
+                Upload
+            </button>
+            <button type="button" class="btn-tbl btn-clear"
+                    onclick="document.getElementById('idCard').value=''">
+                Clear
+            </button>
+        </td>
+    </tr>
+</tbody>
+
+                        </table>
+                    </div>
+                </section>
+
+                <!-- วิชาสอบ/วิชาที่ใช้คะแนนพิจารณา (Table) -->
+                <section class="form-section">
+                    <h4 class="table-title">วิชาสอบ/วิชาที่ใช้คะแนนพิจารณา</h4>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th width="20%">รหัสวิชา</th>
+                                    <th width="40%">ชื่อวิชา</th>
+                                    <th width="20%">วันสอบ</th>
+                                    <th width="20%">เวลาที่สอบ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- 2.4 ข้อมูลส่วนบุคคลและสถานที่ติดต่อ -->
+                <section class="form-section">
+                    <h4 class="section-title">2.4 ข้อมูลส่วนบุคคลและสถานที่ติดต่อ</h4>
+
+                    <div class="form-row-single">
+                        <label>เลขประจำตัวประชาชน<span class="required">*</span></label>
+                        <input type="text" placeholder="-">
+                    </div>
+                    <div class="form-row-single">
+                        <label>คำนำหน้าชื่อ<span class="required">*</span></label>
+                        <select><option value="">-</option>
+                            <option value="mr">นาย</option>
+                            <option value="mrs">นาง</option>
+                            <option value="miss">นางสาว</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ชื่อ นามสกุล (ภาษาไทย)<span class="required">*</span></label>
+                        <div class="input-dual">
+                            <input type="text" placeholder="ชื่อภาษาไทย">
+                            <input type="text" placeholder="นามสกุลภาษาไทย">
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ชื่อ นามสกุล (ภาษาอังกฤษ)<span class="required">*</span></label>
+                        <div class="input-dual">
+                            <input type="text" placeholder="FIRST NAME">
+                            <input type="text" placeholder="LAST NAME">
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>วันเกิด<span class="required">*</span></label>
+                        <div class="input-triple">
+                            <select><option value="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select>
+                                <option value="">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤศจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                            <input type="text" placeholder="ปี พ.ศ. เกิด">
+                        </div>
+                    </div>
+
+                    <!-- 2 Column Form Layout -->
+                    <div class="form-grid-2">
+                        <div class="form-group-grid">
+                            <label>เพศ<span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" checked> ชาย</label>
+                                <label><input type="radio" name="gender"> หญิง</label>
+                            </div>
+                        </div>
+                        <div class="form-group-grid">
+                            <label>ศาสนา<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="buddhism">พุทธ</option>
+                                <option value="islam">อิสลาม</option>
+                                <option value="christianity">คริสต์</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>เชื้อชาติ<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="thai">ไทย</option>
+                                <option value="chinese">จีน</option>
+                                <option value="malaysian">มาเลเซีย</option>
+                            </select>
+                        </div>
+                        <div class="form-group-grid">
+                            <label>สัญชาติ<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="thai">ไทย</option>
+                                <option value="chinese">จีน</option>
+                                <option value="malaysian">มาเลเซีย</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>บ้านเลขที่<span class="required">*</span></label>
+                            <input type="text" placeholder="บ้านเลขที่">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>หมู่ที่<span class="required">*</span></label>
+                            <input type="text" placeholder="หมู่ที่">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>หมู่บ้าน/ชื่ออาคาร<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อหมู่บ้าน/ชื่ออาคาร">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>ซอย<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อซอย">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>ถนน<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อถนน">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>จังหวัด<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="bangkok">กรุงเทพมหานคร</option>
+                                <option value="phuket">ภูเก็ต</option>
+                                <option value="chonburi">จันทบุรี</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>อำเภอ/เขต<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="klongtoey">คลองตัน</option>
+                                <option value="sathon">สะท้อน</option>
+                            </select>
+                        </div>
+                        <div class="form-group-grid">
+                            <label>ตำบล/แขวง<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="suanluang">สวนหลวง</option>
+                                <option value="latphrao">ลาดพร้าว</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>รหัสไปรษณีย์<span class="required">*</span></label>
+                            <input type="text" placeholder="รหัสไปรษณีย์">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>อีเมล<span class="required">*</span></label>
+                            <input type="email" placeholder="name@kmutnb.ac.th">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>เบอร์มือถือ<span class="required">*</span></label>
+                            <input type="text" placeholder="เบอร์มือถือ">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>เบอร์โทรศัพท์สำรอง<span class="required">*</span></label>
+                            <input type="text" placeholder="เบอร์โทรศัพท์สำรอง">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2.5 ข้อมูลบิดา-มารดา -->
+                <section class="form-section">
+                    <h4 class="section-title">2.5 ข้อมูลส่วนบุคคลและสถานที่ติดต่อ</h4>
+                    
+                    <!-- ข้อมูลบิดา -->
+                    <div class="sub-section-title">ข้อมูลบิดา</div>
+                    <div class="form-row-single">
+                        <label>คำนำหน้าชื่อ<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="mr">นาย</option>
+                            <option value="miss">นางสาว</option>
+                            <option value="mrs">นาง</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ชื่อ นามสกุล<span class="required">*</span></label>
+                        <div class="input-dual">
+                            <input type="text" placeholder="ชื่อภาษาไทย">
+                            <input type="text" placeholder="นามสกุลภาษาไทย">
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>สถานะ<span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="father_status" checked> ยังมีชีวิตอยู่</label>
+                            <label><input type="radio" name="father_status"> เสียชีวิตแล้ว(ไม่ต้องระบุที่อยู่)</label>
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ที่อยู่ที่ติดต่อได้สะดวก</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> ที่อยู่เดียวกับผู้สมัคร</label>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group-grid">
+                            <label>บ้านเลขที่<span class="required">*</span></label>
+                            <input type="text" placeholder="บ้านเลขที่">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>หมู่ที่<span class="required">*</span></label>
+                            <input type="text" placeholder="หมู่ที่">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>หมู่บ้าน/ชื่ออาคาร<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อหมู่บ้าน/ชื่ออาคาร">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>ซอย<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อซอย">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>ถนน<span class="required">*</span></label>
+                            <input type="text" placeholder="ชื่อถนน">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>จังหวัด<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="bangkok">กรุงเทพมหานคร</option>
+                                <option value="phuket">ภูเก็ต</option>
+                                <option value="chonburi">จันทบุรี</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>อำเภอ/เขต<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="klongtoey">คลองตัน</option>
+                                <option value="sathon">สะท้อน</option>
+                            </select>
+                        </div>
+                        <div class="form-group-grid">
+                            <label>ตำบล/แขวง<span class="required">*</span></label>
+                            <select>
+                                <option value="">-</option>
+                                <option value="suanluang">สวนหลวง</option>
+                                <option value="latphrao">ลาดพร้าว</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>รหัสไปรษณีย์<span class="required">*</span></label>
+                            <input type="text" placeholder="รหัสไปรษณีย์">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>อีเมล<span class="required">*</span></label>
+                            <input type="email" placeholder="name@kmutnb.ac.th">
+                        </div>
+
+                        <div class="form-group-grid">
+                            <label>เบอร์มือถือ<span class="required">*</span></label>
+                            <input type="text" placeholder="เบอร์มือถือ">
+                        </div>
+                        <div class="form-group-grid">
+                            <label>เบอร์โทรศัพท์สำรอง<span class="required">*</span></label>
+                            <input type="text" placeholder="เบอร์โทรศัพท์สำรอง">
+                        </div>
+                    </div>
+
+                    <!-- ข้อมูลมารดา -->
+                    <div class="sub-section-title mt-20">ข้อมูลมารดา</div>
+                    <div class="form-row-single">
+                        <label>คำนำหน้าชื่อ<span class="required">*</span></label>
+                        <select>
+                            <option value="">-</option>
+                            <option value="mr">นาย</option>
+                            <option value="miss">นางสาว</option>
+                            <option value="mrs">นาง</option>
+                        </select>
+                    </div>
+                    <div class="form-row-single">
+                        <label>ชื่อ นามสกุล<span class="required">*</span></label>
+                        <div class="input-dual">
+                            <input type="text" placeholder="ชื่อภาษาไทย">
+                            <input type="text" placeholder="นามสกุลภาษาไทย">
+                        </div>
+                    </div>
+                    <div class="form-row-single">
+                        <label>สถานะ<span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="mother_status"> ยังมีชีวิตอยู่</label>
+                            <label><input type="radio" name="mother_status" checked> เสียชีวิตแล้ว(ไม่ต้องระบุที่อยู่)</label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button type="button" class="btn-back"><a href="form_1.html">กลับ</a></button>
+                    <button type="button" class="btn-next"><a href="form_3.html">ถัดไป &gt;</a></button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Bottom Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>ติดต่อ</h4>
+                <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 1518</p>
+                <p>ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
+                <p>+66 2 555-2000 ต่อ 1626,1627</p>
+                <p>+66 2 555-2171</p>
+            </div>
+            <div class="footer-social">
+                <h4>ติดต่อเราได้ที่</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/admission.kmutnb/" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/c/KMUTNBofficial/videos" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@kmutnbofficial" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
