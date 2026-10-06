@@ -25,20 +25,32 @@
             <!-- Page Title -->
             <h2 class="register-title">ลงทะเบียน</h2>
 
-            <!-- Registration Form -->
-            <form class="register-form">
+            <!-- Registration Form (ใช้ action="Login.html" เพื่อนำทางไปหน้า Login เมื่อกรอกข้อมูลถูกต้อง) -->
+            <form action="Login.html" method="GET" class="register-form">
                 
                 <!-- National ID -->
                 <div class="form-group">
                     <label>เลขประจำตัวประชาชน <span class="required">*</span></label>
-                    <input type="text" placeholder="เลขประจำตัวประชาชน13หลัก" maxlength="13">
+                    <input type="text" 
+                           name="national_id" 
+                           value="" 
+                           placeholder="เลขประจำตัวประชาชน 13 หลัก" 
+                           maxlength="13" 
+                           required 
+                           pattern="\d{13}" 
+                           title="กรุณากรอกเลขประจำตัวประชาชนเป็นตัวเลข 13 หลัก">
                 </div>
 
                 <!-- Password -->
                 <div class="form-group">
                     <label>รหัสผ่าน <span class="required">*</span></label>
                     <div class="input-with-icon">
-                        <input type="password" placeholder="ความยาวไม่ต่ำกว่า8ตัวอักษร">
+                        <input type="password" 
+                               name="password" 
+                               value="" 
+                               placeholder="ความยาวไม่ต่ำกว่า 8 ตัวอักษร" 
+                               required 
+                               minlength="8">
                     </div>
                     <small class="form-hint">เป็นตัวเลขและตัวอักษรภาษาอังกฤษรวมกัน</small>
                 </div>
@@ -47,44 +59,65 @@
                 <div class="form-group">
                     <label>ยืนยันรหัสผ่าน <span class="required">*</span></label>
                     <div class="input-with-icon">
-                        <input type="password" placeholder="เหมือนกับรหัสผ่าน">
+                        <input type="password" 
+                               name="confirm_password" 
+                               value="" 
+                               placeholder="เหมือนกับรหัสผ่าน" 
+                               required 
+                               minlength="8">
                     </div>
                 </div>
 
                 <!-- First Name -->
                 <div class="form-group">
                     <label>ชื่อ <span class="required">*</span></label>
-                    <input type="text" placeholder="ชื่อ(ไทย)ไม่ต้องมีคำนำหน้าชื่อ">
+                    <input type="text" 
+                           name="firstname" 
+                           value="" 
+                           placeholder="ชื่อ(ไทย)ไม่ต้องมีคำนำหน้าชื่อ" 
+                           required>
                 </div>
 
                 <!-- Last Name -->
                 <div class="form-group">
                     <label>นามสกุล <span class="required">*</span></label>
-                    <input type="text" placeholder="นามสกุล">
+                    <input type="text" 
+                           name="lastname" 
+                           value="" 
+                           placeholder="นามสกุล" 
+                           required>
                 </div>
 
                 <!-- Email -->
                 <div class="form-group">
                     <label>อีเมล <span class="required">*</span></label>
-                    <input type="email" placeholder="email@kmutnb.ac.th">
+                    <input type="email" 
+                           name="email" 
+                           value="" 
+                           placeholder="email@kmutnb.ac.th" 
+                           required>
                     <small class="form-hint">ป้อนอีเมลให้ถูกต้อง สำหรับใช้ในการติดต่อและเปลี่ยนรหัสผ่าน</small>
                 </div>
 
                 <!-- Confirm Email -->
                 <div class="form-group">
                     <label>ยืนยันอีเมล <span class="required">*</span></label>
-                    <input type="email" placeholder="เหมือนอีเมล">
+                    <input type="email" 
+                           name="confirm_email" 
+                           value="" 
+                           placeholder="เหมือนอีเมล" 
+                           required>
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="btn-submit"><a href="Login.html">ลงทะเบียน</a></button>
+                <button type="submit" class="btn-submit">ลงทะเบียน</button>
 
             </form>
         </div>
     </div>
 
     <!-- Bottom Footer -->
-   <footer class="main-footer">
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-info">
                 <h4>ติดต่อ</h4>
