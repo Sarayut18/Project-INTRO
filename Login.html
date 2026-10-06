@@ -23,23 +23,34 @@
             <!-- Page Title -->
             <h2 class="login-title">เข้าสู่ระบบ</h2>
 
-            <!-- Login Form -->
-            <form class="login-form">
+            <!-- Login Form (ใช้ action="index.html" เพื่อเปลี่ยนหน้าเมื่อกรอกข้อมูลถูกต้อง) -->
+            <form action="index.html" method="GET" class="login-form">
                 
                 <!-- National ID / Username -->
                 <div class="form-group">
-                    <label>เลขประจำตัวประชาชน</label>
-                    <input type="text" placeholder="เลขประจำตัวประชาชน" maxlength="13">
+                    <label>เลขประจำตัวประชาชน <span class="required">*</span></label>
+                    <input type="text" 
+                           name="national_id" 
+                           placeholder="เลขประจำตัวประชาชน 13 หลัก" 
+                           maxlength="13" 
+                           required 
+                           pattern="\d{13}" 
+                           title="กรุณากรอกเลขประจำตัวประชาชนเป็นตัวเลข 13 หลัก">
                 </div>
 
                 <!-- Password -->
                 <div class="form-group">
-                    <label>รหัสผ่าน</label>
-                    <input type="password" placeholder="รหัสผ่าน">
+                    <label>รหัสผ่าน <span class="required">*</span></label>
+                    <input type="password" 
+                           name="password" 
+                           placeholder="รหัสผ่าน" 
+                           required 
+                           minlength="8" 
+                           title="กรุณากรอกรหัสผ่านอย่างน้อย 8 ตัวอักษร">
                 </div>
 
-                <!-- Login Button -->
-                <button type="submit" class="btn-login"><a href="index.html">Login</a></button>
+                <!-- Login Button (เป็น button type="submit" ไม่มีแท็ก <a> ครอบ) -->
+                <button type="submit" class="btn-login">Login</button>
 
                 <!-- Links Section -->
                 <div class="auth-links">
